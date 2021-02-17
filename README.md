@@ -1,14 +1,14 @@
 # Resting-Catt
-A REST API wrapping skorokithakis/catt intended for Home Automation usage.
+A REST API wrapping skorokithakis/catt intended for Home Automation usage. Derivation of https://github.com/homeassistant-addons-eliseo/resting-catt
 
-## Usage
+## BUILD
 
-WIP
-
-## Development
 ```
-git pull https://github.com/eliseomartelli/Resting-Catt
-cd Resting-Catt
-python3 -m venv .
-source bin/activate
+docker build . -t mirecekd/resting-catt
+```
+
+### RUN
+
+```
+docker run --name=resting-cat -p 9898:9898 --restart always mirecekd/resting-catt
 ```
