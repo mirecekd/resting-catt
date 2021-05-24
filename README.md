@@ -12,3 +12,13 @@ docker build . -t mirecekd/resting-catt
 ```
 docker run --name=resting-cat -p 9898:9898 --restart always mirecekd/resting-catt
 ```
+
+
+### USAge
+
+```
+curl -X POST http://docker.server.local.lan:9898/cast_site \
+     -H 'Content-Type: application/json' \
+     -d '{"device":"address.of.chromecast.local.lan",\
+          "url":"http://site.to.cast.to.chromecast"}'
+```
